@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,4 +47,18 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.btn {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #FDCB47;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: #569C87;
+  border: 1px solid #569C87;
+  padding: 0.5625rem 1.5rem;
+  line-height: auto;
 }
