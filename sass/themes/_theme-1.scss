@@ -1,4 +1,5 @@
-@include themable(theme-1, $theme-1-bg-color, $theme-1-font, $theme-1-color, $color-gradient);
+@include themable(theme-1, $theme-1-bg-color, $theme-1-font, $theme-1-color, map-get($gradients, gradient-1));
+@include themable(theme-2, $theme-2-bg-color, $theme-2-font, $theme-2-color, map-get($gradients, gradient-2));
 
 .theme-1 {
     h2 {

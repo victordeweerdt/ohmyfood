@@ -196,12 +196,26 @@ button a {
   font-family: "Balsamiq Sans", cursive;
 }
 .theme-1 p {
-  background: linear-gradient(90deg, #f05160 0%, #f6916a 100%), linear-gradient(90deg, #d78431 0%, #8f5bfa 100%);
+  background: linear-gradient(90deg, #f05160 0%, #f6916a 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .theme-1 h2 {
   color: #2c0308;
+  font-size: 1.25rem;
+}
+
+.theme-2 {
+  background: #fff5fe;
+  font-family: "Abril Fatface", cursive;
+}
+.theme-2 p {
+  background: linear-gradient(90deg, #d78431 0%, #8f5bfa 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-2 h2 {
+  color: #C77413;
   font-size: 1.25rem;
 }
 
