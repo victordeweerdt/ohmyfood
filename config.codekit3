@@ -17,6 +17,54 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
+	"/pages/contact.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pages/contact.html",
+		"oF": 0
+		},
+	"/pages/mentions-legales.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pages/mentions-legales.html",
+		"oF": 0
+		},
+	"/pages/menu-1.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pages/menu-1.html",
+		"oF": 0
+		},
+	"/pages/menu-2.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pages/menu-2.html",
+		"oF": 0
+		},
+	"/pages/menu-3.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pages/menu-3.html",
+		"oF": 0
+		},
+	"/pages/menu-4.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pages/menu-4.html",
+		"oF": 0
+		},
 	"/readme.md": {
 		"cB": 0,
 		"cS": 0,
@@ -202,6 +250,14 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/sass/main.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/sass/main.css.map",
+		"oF": 0
+		},
 	"/sass/main.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -224,6 +280,58 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/sass/pages/_home.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/sass/themes/_theme-1.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/themes/_theme-1.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/sass/themes/_theme-2.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/themes/_theme-2.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/sass/themes/_theme-3.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/themes/_theme-3.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/sass/themes/_theme-4.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/themes/_theme-4.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

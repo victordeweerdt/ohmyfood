@@ -8,6 +8,21 @@ $black:    #000000 !default;
 $primary-color: #569C87 !default; // Couleur verte en background
 $secondary-color: #FDCB47 !default; // Couleur jaune
 
+// theme 1
+$theme-1-color: #2c0308 !default; // Main color
+$theme-1-bg-color: #fcdfdb !default; // Background color
+
+// theme 2
+$theme-2-color: #C77413 !default; // Main color
+$theme-2-bg-color: #fff5fe !default; // Background color
+
+
+$gradients: (
+    gradient-1: linear-gradient(90deg, rgba(240,81,96,1) 0%, rgba(246,145,106,1) 100%),
+    gradient-2: linear-gradient(90deg, rgba(215,132,49,1) 0%, rgba(143,91,250,1) 100%),
+);
+$color-gradient: map-values($gradients) !default;
+
 // Spacer
 
 $spacer: 1rem !default;
@@ -37,7 +52,14 @@ $sizes: (
 
 $body-bg: $white !default;
 
-// Grid breackpoints
+// Grid breakpoints
+
+$xl: 1400px; // 4k and hi-res desktop
+$lg: 960px; // 1080 and hi-res laptops
+$med: 640px; // hi-res tablets and low-res laptops
+$sm: 448px; // mobile and low-res tablets
+$xs: 320px; // mobile only
+
 // Grid containers
 
 // Grid columns
@@ -67,6 +89,11 @@ $transition-collapse:         height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 $font-family:             'Open Sans', sans-serif !default;
+
+$theme-1-font:            'Balsamiq Sans', cursive !default;
+$theme-2-font:            'Abril Fatface', cursive !default;
+$theme-3-font:            'Dancing Script', cursive !default;
+$theme-4-font:            'Kaushan Script', cursive !default;
 
 // Font sizes
 $font-size-base:              1rem !default; 

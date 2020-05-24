@@ -6,9 +6,86 @@
     line-height: $line-height;
   }
 
-  // Sizing shortcuts
+// Sizing shortcuts
 
 @mixin size($width, $height: $width) {
     width: $width;
     height: $height;
   }
+
+// Responsive
+
+@mixin transform-y ($value) { 
+  -webkit-transform: translateY ($value); 
+      -ms-transform: translateY ($value); 
+      -moz-transform: translateY ($value); 
+        -o-transform: translateY ($value); 
+          transform: translateY ($value); 
+}
+
+@mixin responsive($query) {
+  @media ( min-width: + $query ) {
+      @content;
+  }
+}
+
+// Colonnes
+
+@mixin columns($count, $width) {
+  -webkit-column-count: $count; /* Chrome, Safari, Opera */
+     -moz-column-count: $count; /* Firefox */
+          column-count: $count;
+  
+  -webkit-column-width: $width; /* Chrome, Safari, Opera */
+     -moz-column-width: $width; /* Firefox */
+          column-width: $width;
+}
+
+@mixin page-break-inside($rule) {
+  -webkit-column-break-inside: $rule; /* Chrome, Safari, Opera */
+     page-break-inside: $rule; /* Firefox */
+          break-inside: $rule; /* IE 10+ */
+}
+
+// Fonts
+
+@mixin font($size: false,$color: false,$weight: false,$lh: false) {
+  @if $size {
+    font-size:$size;
+  }
+  @if $color {
+    color:$color;
+  }
+  @if $weight {
+    font-weight:$weight;
+  }
+  @if $lh {
+    line-height:$lh;
+  }
+}
+
+// Themes
+
+@mixin gradients {
+  @if map-has-key($gradients, gradient-1) {
+    background: map-get($gradients, gradient-1);
+  } @else {
+    background: map-get($gradients, gradient-2);
+  }
+}
+
+@mixin themable($theme-name, $container-bg, $main-font, $color-title, $innertext) {
+  .#{$theme-name} {
+        background:$container-bg;
+        font-family:$main-font;
+        p {
+          background: $innertext;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        h2 {
+          color:$color-title;
+          font-size:1.25rem;
+        }
+  }
+}

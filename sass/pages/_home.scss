@@ -1,0 +1,14 @@
+// Home
+
+.card-prev {
+    height: 500px;
+    box-shadow: 0 0 5px 0 rgba(161, 161, 161, 0.5);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    p {
+        padding-bottom: 1rem;
+        font-size:0.75rem;
+    }
+}

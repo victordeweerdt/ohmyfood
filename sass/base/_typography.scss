@@ -1,4 +1,8 @@
 // TYPOGRAPHY
 // Import de la typography Open Sans regular et extra bold
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Balsamiq+Sans&family=Dancing+Script&family=Kaushan+Script&family=Open+Sans:wght@400;800&display=swap');
+
+h2 {
+    @include font(1.25rem, $black, 400, 1.6rem);
+}
