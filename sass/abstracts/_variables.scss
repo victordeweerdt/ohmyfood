@@ -16,12 +16,22 @@ $theme-1-bg-color: #fcdfdb !default; // Background color
 $theme-2-color: #C77413 !default; // Main color
 $theme-2-bg-color: #fff5fe !default; // Background color
 
+// theme 3
+$theme-3-color: #0687FB !default; // Main color
+$theme-3-bg-color: #F9F9F9 !default; // Background color
+
+// theme 4
+$theme-4-color: #72BF55 !default; // Main color
+$theme-4-bg-color: #FDFFFD !default; // Background color
+
+// Gradients
 
 $gradients: (
     gradient-1: linear-gradient(90deg, rgba(240,81,96,1) 0%, rgba(246,145,106,1) 100%),
     gradient-2: linear-gradient(90deg, rgba(215,132,49,1) 0%, rgba(143,91,250,1) 100%),
+    gradient-3: linear-gradient(90deg, rgba(1,49,223,1) 0%, rgba(13,133,249,1) 100%),
+    gradient-4: linear-gradient(90deg, rgba(68,152,61,1) 0%, rgba(189,250,125,1) 100%),
 );
-$color-gradient: map-values($gradients) !default;
 
 // Spacer
 

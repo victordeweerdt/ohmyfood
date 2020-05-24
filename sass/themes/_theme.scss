@@ -10,6 +10,15 @@ a:link {
 i {
     font-size: 1.5rem;
     padding-bottom: 0.5rem;
+    background: linear-gradient(90deg, rgba(240,81,96,1) 0%, rgba(246,145,106,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media (max-width: $sm) {
+        font-size: 1rem;
+    }
+    @media (min-width:$xl) {
+        font-size:2.5rem;
+    }
 }
 
 .container {
@@ -21,16 +30,11 @@ i {
 main {
     padding:0px 20px;
     margin:auto;
-    @media  (min-width:$med) {
-        padding:0px 40px;
-    }
-    @media (min-width:$lg) {
+    margin-bottom:11vw;
+    @media (max-width:$lg) {
         padding:0px 60px;
+        margin-bottom:6vw;
     }
-    @media (min-width:$xl) {
-        padding:0px 80px;
-    }
-    margin-bottom:13vw;
 }
 
 .cards {
@@ -44,6 +48,12 @@ main {
         @media (min-width:$lg){
             width:24%;
         }
+    }
+    @media (max-width:$lg) {
+        margin:2rem auto;
+    }
+    @media (max-width:$med) {
+        margin:1rem auto;
     }
 }
 
@@ -59,6 +69,9 @@ button {
         text-align: center;
         color: $secondary-color;
         text-decoration: none;
+        @media (max-width: $sm) {
+            font-size:1rem;
+        }
     }
 }
 

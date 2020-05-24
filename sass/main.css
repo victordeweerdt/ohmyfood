@@ -100,6 +100,11 @@ footer a {
   font-size: 1rem;
   padding: 10px 20px;
 }
+@media (max-width: 448px) {
+  footer a {
+    font-size: 0.75rem;
+  }
+}
 
 .card-prev {
   height: 500px;
@@ -108,10 +113,33 @@ footer a {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 .card-prev p {
   padding-bottom: 1rem;
   font-size: 0.75rem;
+  text-align: center;
+}
+@media (max-width: 448px) {
+  .card-prev p {
+    font-size: 0.65rem;
+    padding-bottom: 0.5rem;
+  }
+}
+@media (max-width: 960px) {
+  .card-prev {
+    height: 350px;
+  }
+}
+@media (max-width: 640px) {
+  .card-prev {
+    height: 250px;
+  }
+}
+@media (max-width: 448px) {
+  .card-prev {
+    height: 150px;
+  }
 }
 
 body {
@@ -126,6 +154,20 @@ a:link {
 i {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
+  background: linear-gradient(90deg, #f05160 0%, #f6916a 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 448px) {
+  i {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  i {
+    font-size: 2.5rem;
+  }
 }
 
 .container {
@@ -137,21 +179,12 @@ i {
 main {
   padding: 0px 20px;
   margin: auto;
-  margin-bottom: 13vw;
+  margin-bottom: 11vw;
 }
-@media (min-width: 640px) {
-  main {
-    padding: 0px 40px;
-  }
-}
-@media (min-width: 960px) {
+@media (max-width: 960px) {
   main {
     padding: 0px 60px;
-  }
-}
-@media (min-width: 1400px) {
-  main {
-    padding: 0px 80px;
+    margin-bottom: 6vw;
   }
 }
 
@@ -170,6 +203,16 @@ main {
     width: 24%;
   }
 }
+@media (max-width: 960px) {
+  .cards {
+    margin: 2rem auto;
+  }
+}
+@media (max-width: 640px) {
+  .cards {
+    margin: 1rem auto;
+  }
+}
 
 button {
   border: none;
@@ -185,6 +228,11 @@ button a {
   color: #FDCB47;
   text-decoration: none;
 }
+@media (max-width: 448px) {
+  button a {
+    font-size: 1rem;
+  }
+}
 
 .center-row {
   display: flex;
@@ -197,12 +245,18 @@ button a {
 }
 .theme-1 p {
   background: linear-gradient(90deg, #f05160 0%, #f6916a 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .theme-1 h2 {
   color: #2c0308;
   font-size: 1.25rem;
+}
+@media (max-width: 448px) {
+  .theme-1 h2 {
+    font-size: 1rem;
+  }
 }
 
 .theme-2 {
@@ -211,16 +265,60 @@ button a {
 }
 .theme-2 p {
   background: linear-gradient(90deg, #d78431 0%, #8f5bfa 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .theme-2 h2 {
   color: #C77413;
   font-size: 1.25rem;
 }
+@media (max-width: 448px) {
+  .theme-2 h2 {
+    font-size: 1rem;
+  }
+}
+
+.theme-3 {
+  background: #F9F9F9;
+  font-family: "Dancing Script", cursive;
+}
+.theme-3 p {
+  background: linear-gradient(90deg, #0131df 0%, #0d85f9 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-3 h2 {
+  color: #0687FB;
+  font-size: 1.25rem;
+}
+@media (max-width: 448px) {
+  .theme-3 h2 {
+    font-size: 1rem;
+  }
+}
+
+.theme-4 {
+  background: #FDFFFD;
+  font-family: "Kaushan Script", cursive;
+}
+.theme-4 p {
+  background: linear-gradient(90deg, #44983d 0%, #bdfa7d 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-4 h2 {
+  color: #72BF55;
+  font-size: 1.25rem;
+}
+@media (max-width: 448px) {
+  .theme-4 h2 {
+    font-size: 1rem;
+  }
+}
 
 .theme-1 h2 {
   text-transform: uppercase;
 }
-
-/*# sourceMappingURL=main.css.map */

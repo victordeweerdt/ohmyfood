@@ -66,14 +66,6 @@
 
 // Themes
 
-@mixin gradients {
-  @if map-has-key($gradients, gradient-1) {
-    background: map-get($gradients, gradient-1);
-  } @else {
-    background: map-get($gradients, gradient-2);
-  }
-}
-
 @mixin themable($theme-name, $container-bg, $main-font, $color-title, $innertext) {
   .#{$theme-name} {
         background:$container-bg;
@@ -86,6 +78,9 @@
         h2 {
           color:$color-title;
           font-size:1.25rem;
+          @media (max-width:$sm) {
+            font-size:1rem;
+          }
         }
   }
 }
