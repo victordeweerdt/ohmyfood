@@ -13,11 +13,8 @@ i {
     background: linear-gradient(90deg, rgba(240,81,96,1) 0%, rgba(246,145,106,1) 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    @media (max-width: $sm) {
-        font-size: 1rem;
-    }
     @media (min-width:$xl) {
-        font-size:4rem;
+        font-size:2.5rem;
     }
 }
 
@@ -48,8 +45,8 @@ section {
 
 .cards {
     display:flex;
-    width:100%;
-    margin:5rem auto;
+    width:85%;
+    margin:1rem auto;
     flex-wrap: wrap;
     justify-content: space-between;
     a {
@@ -58,11 +55,15 @@ section {
             width:24%;
         }
     }
-    @media (max-width:$lg) {
+    @media (min-width:$med) {
         margin:2rem auto;
     }
-    @media (max-width:$med) {
-        margin:1rem auto;
+    @media (min-width:$lg) {
+        margin:5rem auto;
+        width:80%;
+    }
+    @media (min-width:$xl) {
+        width:66.6%;
     }
 }
 

@@ -1,7 +1,7 @@
 // Home
 
 .card-prev {
-    height: 500px;
+    height: 200px;
     box-shadow: 0 0 5px 0 rgba(161, 161, 161, 0.5);
     display: flex;
     flex-flow: column;
@@ -9,21 +9,24 @@
     justify-content: center;
     margin-bottom:1rem;
     p {
-        padding-bottom: 1rem;
-        font-size:0.75rem;
+        padding-bottom: 0.5rem;
+        font-size:0.65rem;
         text-align: center;
-        @media (max-width: $sm) {
-            font-size:0.65rem;
-            padding-bottom:0.5rem;
+        @media (min-width: $med) {
+            font-size: $spacer;
+            padding-bottom: $spacer;
         }
     }
-    @media (max-width: $lg) {
-        height:350px;
-    }
-    @media (max-width: $med) {
+    @media (min-width: $sm) {
         height:250px;
     }
-    @media (max-width: $sm) {
-        height:150px;
+    @media (min-width: $med) {
+        height:400px;
+    }
+    @media (min-width: $lg) {
+        height:350px;
+    }
+    @media (min-width:$xl) {
+        height:400px;
     }
 }

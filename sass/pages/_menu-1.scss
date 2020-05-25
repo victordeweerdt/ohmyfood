@@ -10,3 +10,11 @@
         text-transform: none;
     }
 }
+
+h3 i {
+    padding-right:10px;
+    font-size:$spacer;
+    @media (min-width:$xl) {
+        font-size:$spacer*2;
+    }
+}
