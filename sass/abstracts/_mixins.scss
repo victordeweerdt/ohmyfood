@@ -77,10 +77,14 @@
         }
         h2 {
           color:$color-title;
-          font-size:1.25rem;
-          @media (max-width:$sm) {
-            font-size:1rem;
-          }
         }
   }
+}
+
+// Flex bloc
+
+@mixin flex ($flex-direction, $align-items: false) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
 }

@@ -3,6 +3,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Balsamiq+Sans&family=Dancing+Script&family=Kaushan+Script&family=Open+Sans:wght@400;800&display=swap');
 
+h1 {
+    @include font(1.5rem, $black, 400, 1.5rem);
+    text-align:center;
+    padding:2rem 0 1rem 0;
+    @media (min-width:$xl) {
+        @include font(1.5*1.5rem, $black, 400, 1.5*1.5rem);
+        padding:3rem 0 2rem 0;
+    }
+}
+
 h2 {
     @include font(1.25rem, $black, 400, 1.6rem);
+    @media (min-width:$xl) {
+        @include font(1.25*1.5rem, $black, 400, 1.6*1.5rem);
+    }
+}
+
+h3 {
+    @include font(1rem, $black, 400, 1.2rem);
+    @media (min-width:$xl) {
+        @include font(1*1.5rem, $black, 400, 1.2*1.5rem);
+    }
 }

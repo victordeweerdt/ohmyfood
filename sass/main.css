@@ -49,11 +49,52 @@ table {
   border-spacing: 0;
 }
 
+h1 {
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+}
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 2.25rem;
+    color: #000000;
+    font-weight: 400;
+    line-height: 2.25rem;
+    padding: 3rem 0 2rem 0;
+  }
+}
+
 h2 {
   font-size: 1.25rem;
   color: #000000;
   font-weight: 400;
   line-height: 1.6rem;
+}
+@media (min-width: 1400px) {
+  h2 {
+    font-size: 1.875rem;
+    color: #000000;
+    font-weight: 400;
+    line-height: 2.4rem;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 400;
+  line-height: 1.2rem;
+}
+@media (min-width: 1400px) {
+  h3 {
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: 400;
+    line-height: 1.8rem;
+  }
 }
 
 .btn {
@@ -142,6 +183,65 @@ footer a {
   }
 }
 
+.theme-1 {
+  background: #fcdfdb;
+  font-family: "Balsamiq Sans", cursive;
+}
+.theme-1 p {
+  background: linear-gradient(90deg, #f05160 0%, #f6916a 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-1 h2 {
+  color: #2c0308;
+}
+
+.theme-1 h2 {
+  text-transform: uppercase;
+}
+.theme-1 i + h2 {
+  text-transform: none;
+}
+
+.theme-2 {
+  background: #fff5fe;
+  font-family: "Abril Fatface", cursive;
+}
+.theme-2 p {
+  background: linear-gradient(90deg, #d78431 0%, #8f5bfa 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-2 h2 {
+  color: #C77413;
+}
+
+.theme-3 {
+  background: #F9F9F9;
+  font-family: "Dancing Script", cursive;
+}
+.theme-3 p {
+  background: linear-gradient(90deg, #0131df 0%, #0d85f9 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-3 h2 {
+  color: #0687FB;
+}
+
+.theme-4 {
+  background: #FDFFFD;
+  font-family: "Kaushan Script", cursive;
+}
+.theme-4 p {
+  background: linear-gradient(90deg, #44983d 0%, #bdfa7d 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-4 h2 {
+  color: #72BF55;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Open Sans", sans-serif;
@@ -155,8 +255,7 @@ i {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   background: linear-gradient(90deg, #f05160 0%, #f6916a 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (max-width: 448px) {
@@ -166,7 +265,7 @@ i {
 }
 @media (min-width: 1400px) {
   i {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 }
 
@@ -177,14 +276,27 @@ i {
 }
 
 main {
-  padding: 0px 20px;
   margin: auto;
   margin-bottom: 11vw;
 }
 @media (max-width: 960px) {
   main {
-    padding: 0px 60px;
     margin-bottom: 6vw;
+  }
+}
+
+section {
+  width: 85%;
+  margin: 0 auto;
+}
+@media (min-width: 960px) {
+  section {
+    width: 80%;
+  }
+}
+@media (min-width: 1400px) {
+  section {
+    width: 66.6%;
   }
 }
 
@@ -239,86 +351,75 @@ button a {
   justify-content: center;
 }
 
-.theme-1 {
-  background: #fcdfdb;
-  font-family: "Balsamiq Sans", cursive;
+.menu {
+  box-shadow: 0 0 5px 0 rgba(161, 161, 161, 0.5);
+  padding: 4rem 0;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.theme-1 p {
-  background: linear-gradient(90deg, #f05160 0%, #f6916a 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+@media (min-width: 960px) {
+  .menu {
+    width: 80%;
+  }
 }
-.theme-1 h2 {
-  color: #2c0308;
-  font-size: 1.25rem;
-}
-@media (max-width: 448px) {
-  .theme-1 h2 {
-    font-size: 1rem;
+@media (min-width: 1400px) {
+  .menu {
+    width: 66.6%;
   }
 }
 
-.theme-2 {
-  background: #fff5fe;
-  font-family: "Abril Fatface", cursive;
+.head {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: false;
 }
-.theme-2 p {
-  background: linear-gradient(90deg, #d78431 0%, #8f5bfa 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+.head img {
+  width: 33.3%;
 }
-.theme-2 h2 {
-  color: #C77413;
-  font-size: 1.25rem;
+.head h3 {
+  width: 33.3%;
+  text-align: center;
 }
-@media (max-width: 448px) {
-  .theme-2 h2 {
+.head h3 + img {
+  transform: scaleX(-1) scaleY(1);
+}
+
+table {
+  width: 100%;
+  margin: 2rem 0;
+}
+table th {
+  font-size: 0.4rem;
+}
+@media (min-width: 448px) {
+  table th {
+    font-size: 0.55rem;
+  }
+}
+@media (min-width: 640px) {
+  table th {
+    font-size: 0.65rem;
+  }
+}
+@media (min-width: 960px) {
+  table th {
     font-size: 1rem;
   }
 }
-
-.theme-3 {
-  background: #F9F9F9;
-  font-family: "Dancing Script", cursive;
+table tr {
+  line-height: 3;
 }
-.theme-3 p {
-  background: linear-gradient(90deg, #0131df 0%, #0d85f9 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+table tr > th {
+  width: 90%;
+  text-align: left;
 }
-.theme-3 h2 {
-  color: #0687FB;
-  font-size: 1.25rem;
-}
-@media (max-width: 448px) {
-  .theme-3 h2 {
-    font-size: 1rem;
-  }
+table th + th {
+  width: 10%;
+  text-align: right;
 }
 
-.theme-4 {
-  background: #FDFFFD;
-  font-family: "Kaushan Script", cursive;
-}
-.theme-4 p {
-  background: linear-gradient(90deg, #44983d 0%, #bdfa7d 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.theme-4 h2 {
-  color: #72BF55;
-  font-size: 1.25rem;
-}
-@media (max-width: 448px) {
-  .theme-4 h2 {
-    font-size: 1rem;
-  }
-}
-
-.theme-1 h2 {
-  text-transform: uppercase;
-}
+/*# sourceMappingURL=main.css.map */

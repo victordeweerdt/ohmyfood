@@ -17,7 +17,7 @@ i {
         font-size: 1rem;
     }
     @media (min-width:$xl) {
-        font-size:2.5rem;
+        font-size:4rem;
     }
 }
 
@@ -28,12 +28,21 @@ i {
 }
 
 main {
-    padding:0px 20px;
     margin:auto;
     margin-bottom:11vw;
     @media (max-width:$lg) {
-        padding:0px 60px;
         margin-bottom:6vw;
+    }
+}
+
+section {
+    width:85%;
+    margin:0 auto;
+    @media (min-width:$lg) {
+        width:80%;
+    }
+    @media (min-width:$xl) {
+        width:66.6%;
     }
 }
 
@@ -80,3 +89,60 @@ button {
     justify-content: center;
 }
 
+.menu {
+    box-shadow: 0 0 5px 0 rgba(161, 161, 161, 0.5);
+    padding:4rem 0;
+    width:85%;
+    margin:0 auto;
+    @include flex(column, center);
+    @media (min-width:$lg) {
+        width:80%;
+    }
+    @media (min-width:$xl) {
+        width:66.6%;
+    }
+}
+
+.head {
+    margin-top: 3rem;
+    @include flex(row);
+    img {
+        width:33.3%;
+    }
+    h3 {
+        width:33.3%;
+        text-align: center;
+    }
+    h3+img {
+        transform: scaleX(-1) scaleY(1);
+    }
+
+}
+
+table {
+    width:100%;
+    margin: 2rem 0;
+    th {
+        font-size: $spacer*0.4;
+        @media (min-width:$sm) {
+            font-size: $spacer*0.55;
+        }
+        @media (min-width:$med) {
+            font-size: $spacer*0.65;
+        }
+        @media (min-width:$lg) {
+            font-size: $spacer;
+        }
+    }
+    tr {
+        line-height: 3;
+    }
+    tr>th {
+        width:90%;
+        text-align:left;
+    }
+    th+th {
+        width:10%;
+        text-align: right;
+    }
+}
