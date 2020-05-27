@@ -221,7 +221,7 @@ footer a {
   background: #fcdfdb;
   font-family: "Balsamiq Sans", cursive;
 }
-.theme-1 p {
+.theme-1 .restaurant-name {
   background: linear-gradient(90deg, #f05160 0%, #f6916a 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -251,7 +251,7 @@ h3 i {
   background: #fff5fe;
   font-family: "Abril Fatface", cursive;
 }
-.theme-2 p {
+.theme-2 .restaurant-name {
   background: linear-gradient(90deg, #d78431 0%, #8f5bfa 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -264,7 +264,7 @@ h3 i {
   background: #F9F9F9;
   font-family: "Dancing Script", cursive;
 }
-.theme-3 p {
+.theme-3 .restaurant-name {
   background: linear-gradient(90deg, #0131df 0%, #0d85f9 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -277,7 +277,7 @@ h3 i {
   background: #FDFFFD;
   font-family: "Kaushan Script", cursive;
 }
-.theme-4 p {
+.theme-4 .restaurant-name {
   background: linear-gradient(90deg, #44983d 0%, #bdfa7d 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
