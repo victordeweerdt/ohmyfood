@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="5px" viewBox="0 0 96 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path Copy</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu-3" transform="translate(-61.000000, -239.000000)" fill="#032BDD">
+            <g id="main" transform="translate(44.000000, 90.000000)">
+                <g id="menu" transform="translate(0.000000, 30.000000)">
+                    <g id="section-1" transform="translate(17.000000, 114.000000)">
+                        <path d="M0,9.93994141 L1.14770508,7.58300781 L87.4560547,7.58300781 C90.1585286,7.91129557 92.7376302,7.26668294 95.1933594,5.64916992 C94.4072266,8.46508789 91.8140462,9.87304688 87.4138184,9.87304688 C83.6342557,9.87304687 61.6034573,9.88949825 21.321423,9.92240099 C16.9114491,9.9260031 9.80430808,9.9318499 0,9.93994141 Z" id="Path-Copy" transform="translate(47.596680, 7.794556) scale(-1, 1) translate(-47.596680, -7.794556) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prefix": "postcss ./sass/main.css --use autoprefixer ./prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victordeweerdt/ohmyfood.git"
+  },
+  "author": "Victor Deweerdt",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/victordeweerdt/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/victordeweerdt/ohmyfood#readme"
+}

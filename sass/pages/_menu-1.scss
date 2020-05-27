@@ -1,6 +1,6 @@
 // Menu 1
 
-@include themable(theme-1, $theme-1-bg-color, $theme-1-font, $theme-1-color, map-get($gradients, gradient-1));
+@include themable(theme-1, $theme-1-bg-color, $theme-1-font, $theme-1-color, $theme-1-color);
 
 .theme-1 {
     h2 {

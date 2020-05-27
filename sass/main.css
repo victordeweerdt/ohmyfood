@@ -53,7 +53,7 @@ h1 {
   font-size: 1.5rem;
   color: #000000;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: initial;
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -62,7 +62,7 @@ h1 {
     font-size: 1.875rem;
     color: #000000;
     font-weight: 400;
-    line-height: 1.875rem;
+    line-height: initial;
     padding-bottom: 2rem;
   }
 }
@@ -71,7 +71,7 @@ h1 {
     font-size: 2.25rem;
     color: #000000;
     font-weight: 400;
-    line-height: 2.25rem;
+    line-height: initial;
   }
 }
 
@@ -79,14 +79,14 @@ h2 {
   font-size: 1.25rem;
   color: #000000;
   font-weight: 400;
-  line-height: 1.6rem;
+  line-height: initial;
 }
 @media (min-width: 640px) {
   h2 {
     font-size: 1.5625rem;
     color: #000000;
     font-weight: 400;
-    line-height: 2rem;
+    line-height: initial;
   }
 }
 @media (min-width: 1400px) {
@@ -94,7 +94,7 @@ h2 {
     font-size: 1.875rem;
     color: #000000;
     font-weight: 400;
-    line-height: 2.4rem;
+    line-height: initial;
   }
 }
 
@@ -102,14 +102,14 @@ h3 {
   font-size: 1rem;
   color: #000000;
   font-weight: 400;
-  line-height: 1.2rem;
+  line-height: initial;
 }
 @media (min-width: 640px) {
   h3 {
     font-size: 1.25rem;
     color: #000000;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: initial;
   }
 }
 @media (min-width: 1400px) {
@@ -117,7 +117,37 @@ h3 {
     font-size: 1.5rem;
     color: #000000;
     font-weight: 400;
-    line-height: 1.8rem;
+    line-height: initial;
+  }
+}
+
+p {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 400;
+  line-height: initial;
+}
+@media (min-width: 960px) {
+  p {
+    font-size: 1.25rem;
+    color: #000000;
+    font-weight: 400;
+    line-height: initial;
+  }
+}
+
+a {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 400;
+  line-height: initial;
+}
+@media (min-width: 960px) {
+  a {
+    font-size: 1.25rem;
+    color: #000000;
+    font-weight: 400;
+    line-height: initial;
   }
 }
 
@@ -222,11 +252,11 @@ footer a {
   font-family: "Balsamiq Sans", cursive;
 }
 .theme-1 .restaurant-name {
-  background: linear-gradient(90deg, #f05160 0%, #f6916a 100%);
+  background: #2c0308;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.theme-1 h2 {
+.theme-1 .subtitle {
   color: #2c0308;
 }
 
@@ -256,8 +286,47 @@ h3 i {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.theme-2 h2 {
+.theme-2 .subtitle {
   color: #C77413;
+}
+
+.first-section {
+  color: #C77413;
+}
+.first-section > p {
+  color: #C77413;
+}
+.first-section img {
+  color: #C77413;
+}
+.first-section h3 {
+  color: #C77413;
+}
+
+.second-section {
+  color: #A56799;
+}
+.second-section > p {
+  color: #A56799;
+}
+.second-section img {
+  color: #A56799;
+}
+.second-section h3 {
+  color: #A56799;
+}
+
+.third-section {
+  color: #6E4CCC;
+}
+.third-section > p {
+  color: #6E4CCC;
+}
+.third-section img {
+  color: #6E4CCC;
+}
+.third-section h3 {
+  color: #6E4CCC;
 }
 
 .theme-3 {
@@ -269,7 +338,7 @@ h3 i {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.theme-3 h2 {
+.theme-3 .subtitle {
   color: #0687FB;
 }
 
@@ -282,7 +351,7 @@ h3 i {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.theme-4 h2 {
+.theme-4 .subtitle {
   color: #72BF55;
 }
 
@@ -312,9 +381,10 @@ i {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (min-width: 1400px) {
+@media (min-width: 960px) {
   i {
     font-size: 2.5rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -375,9 +445,6 @@ section {
   padding: 8px 25px;
 }
 .btn-regular a {
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 1.125rem;
   text-align: center;
   color: #FDCB47;
   text-decoration: none;
@@ -385,6 +452,12 @@ section {
 @media (max-width: 448px) {
   .btn-regular a {
     font-size: 1rem;
+  }
+}
+@media (min-width: 960px) {
+  .btn-regular {
+    padding: 12px 35px;
+    border-radius: 12px;
   }
 }
 
@@ -397,7 +470,7 @@ section {
 
 .menu {
   box-shadow: 0 0 5px 0 rgba(161, 161, 161, 0.5);
-  padding: 2rem 0;
+  padding: 2rem 0 4rem 0;
   width: 85%;
   margin: 0 auto;
   display: flex;
@@ -405,10 +478,16 @@ section {
   align-items: center;
   justify-content: false;
 }
+.menu h2 {
+  font-size: 1.5rem;
+}
 @media (min-width: 960px) {
   .menu {
     width: 80%;
-    padding: 4rem 0;
+    padding: 5rem 0 10rem 0;
+  }
+  .menu h2 {
+    font-size: 3rem;
   }
 }
 @media (min-width: 1400px) {
@@ -436,7 +515,7 @@ section {
 }
 @media (min-width: 960px) {
   .head {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 }
 
