@@ -83,8 +83,9 @@
 
 // Flex bloc
 
-@mixin flex ($flex-direction, $align-items: false) {
+@mixin flex ($flex-direction, $align-items: false, $justify: false) {
   display: flex;
   flex-direction: $flex-direction;
   align-items: $align-items;
+  justify-content: $justify;
 }

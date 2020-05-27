@@ -1,6 +1,13 @@
+html {
+    height:100%;
+}
+
 body {
     background-color: $body-bg;
     font-family:$font-family;
+    min-height:100%;
+    width:100%;
+    @include flex(column, false, center);
 }
 
 a:link {
@@ -18,17 +25,11 @@ i {
     }
 }
 
-.container {
-    width:100%;
-    margin:auto;
-    padding:0px;
-}
-
 main {
-    margin:auto;
-    margin-bottom:11vw;
-    @media (max-width:$lg) {
-        margin-bottom:6vw;
+    flex:1;
+    margin:3rem 0 3rem 0;
+    @media (min-width:$lg) {
+        margin:5rem 0 5rem 0;
     }
 }
 
@@ -44,30 +45,24 @@ section {
 }
 
 .cards {
-    display:flex;
+    @include flex(row, false, space-between);
     width:85%;
-    margin:1rem auto;
+    margin:0 auto;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-bottom:3rem;
     a {
         width:49%;
+        margin:0 auto;
         @media (min-width:$lg){
             width:24%;
         }
-    }
-    @media (min-width:$med) {
-        margin:2rem auto;
-    }
-    @media (min-width:$lg) {
-        margin:5rem auto;
-        width:80%;
     }
     @media (min-width:$xl) {
         width:66.6%;
     }
 }
 
-button {
+.btn-regular {
     border:none;
     border-radius: 8px;
     background: $primary-color;
@@ -86,18 +81,18 @@ button {
 }
 
 .center-row {
-    display: flex;
-    justify-content: center;
+    @include flex(row, false, center);
 }
 
 .menu {
     box-shadow: 0 0 5px 0 rgba(161, 161, 161, 0.5);
-    padding:4rem 0;
+    padding:2rem 0;
     width:85%;
     margin:0 auto;
     @include flex(column, center);
     @media (min-width:$lg) {
         width:80%;
+        padding:4rem 0;
     }
     @media (min-width:$xl) {
         width:66.6%;
@@ -105,7 +100,7 @@ button {
 }
 
 .head {
-    margin-top: 3rem;
+    margin-top: 2rem;
     @include flex(row);
     img {
         width:33.3%;
@@ -116,6 +111,9 @@ button {
     }
     h3+img {
         transform: scaleX(-1) scaleY(1);
+    }
+    @media (min-width:$lg) {
+        margin-top:3rem;
     }
 
 }

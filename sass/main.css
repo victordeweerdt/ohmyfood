@@ -55,7 +55,7 @@ h1 {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
-  padding: 2rem 0 1rem 0;
+  padding-bottom: 1rem;
 }
 @media (min-width: 640px) {
   h1 {
@@ -63,6 +63,7 @@ h1 {
     color: #000000;
     font-weight: 400;
     line-height: 1.875rem;
+    padding-bottom: 2rem;
   }
 }
 @media (min-width: 1400px) {
@@ -71,7 +72,6 @@ h1 {
     color: #000000;
     font-weight: 400;
     line-height: 2.25rem;
-    padding: 3rem 0 2rem 0;
   }
 }
 
@@ -137,8 +137,11 @@ h3 {
 
 header {
   background: #569C87;
-  width: 100%;
   height: 4.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 header p {
   font-size: 1.6875rem;
@@ -149,9 +152,12 @@ header p {
   padding-top: 1rem;
 }
 
+.main-logo {
+  width: 135px;
+}
+
 footer {
   background: #569C87;
-  width: 100%;
   height: 3rem;
   display: flex;
   flex-flow: row;
@@ -178,7 +184,6 @@ footer a {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
 }
 .card-prev p {
   padding-bottom: 0.5rem;
@@ -281,9 +286,19 @@ h3 i {
   color: #72BF55;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Open Sans", sans-serif;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: false;
+  justify-content: center;
 }
 
 a:link {
@@ -303,19 +318,13 @@ i {
   }
 }
 
-.container {
-  width: 100%;
-  margin: auto;
-  padding: 0px;
-}
-
 main {
-  margin: auto;
-  margin-bottom: 11vw;
+  flex: 1;
+  margin: 3rem 0 3rem 0;
 }
-@media (max-width: 960px) {
+@media (min-width: 960px) {
   main {
-    margin-bottom: 6vw;
+    margin: 5rem 0 5rem 0;
   }
 }
 
@@ -336,28 +345,21 @@ section {
 
 .cards {
   display: flex;
-  width: 85%;
-  margin: 1rem auto;
-  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: false;
   justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
 }
 .cards a {
   width: 49%;
+  margin: 0 auto;
 }
 @media (min-width: 960px) {
   .cards a {
     width: 24%;
-  }
-}
-@media (min-width: 640px) {
-  .cards {
-    margin: 2rem auto;
-  }
-}
-@media (min-width: 960px) {
-  .cards {
-    margin: 5rem auto;
-    width: 80%;
   }
 }
 @media (min-width: 1400px) {
@@ -366,13 +368,13 @@ section {
   }
 }
 
-button {
+.btn-regular {
   border: none;
   border-radius: 8px;
   background: #569C87;
   padding: 8px 25px;
 }
-button a {
+.btn-regular a {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.125rem;
@@ -381,28 +383,32 @@ button a {
   text-decoration: none;
 }
 @media (max-width: 448px) {
-  button a {
+  .btn-regular a {
     font-size: 1rem;
   }
 }
 
 .center-row {
   display: flex;
+  flex-direction: row;
+  align-items: false;
   justify-content: center;
 }
 
 .menu {
   box-shadow: 0 0 5px 0 rgba(161, 161, 161, 0.5);
-  padding: 4rem 0;
+  padding: 2rem 0;
   width: 85%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: false;
 }
 @media (min-width: 960px) {
   .menu {
     width: 80%;
+    padding: 4rem 0;
   }
 }
 @media (min-width: 1400px) {
@@ -412,10 +418,11 @@ button a {
 }
 
 .head {
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   align-items: false;
+  justify-content: false;
 }
 .head img {
   width: 33.3%;
@@ -426,6 +433,11 @@ button a {
 }
 .head h3 + img {
   transform: scaleX(-1) scaleY(1);
+}
+@media (min-width: 960px) {
+  .head {
+    margin-top: 3rem;
+  }
 }
 
 table {
