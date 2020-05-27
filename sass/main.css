@@ -440,38 +440,24 @@ section {
   }
 }
 
-table {
+.main-list {
   width: 100%;
   margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: false;
+  justify-content: false;
+  flex-wrap: wrap;
 }
-table th {
-  font-size: 0.4rem;
-}
-@media (min-width: 448px) {
-  table th {
-    font-size: 0.55rem;
-  }
-}
-@media (min-width: 640px) {
-  table th {
-    font-size: 0.65rem;
-  }
-}
-@media (min-width: 960px) {
-  table th {
-    font-size: 1rem;
-  }
-}
-table tr {
-  line-height: 3;
-}
-table tr > th {
+.main-list .description {
   width: 90%;
   text-align: left;
+  margin: 0.5rem 0;
 }
-table th + th {
-  width: 10%;
+.main-list .price {
+  min-width: 10%;
   text-align: right;
+  margin: 0.5rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */
