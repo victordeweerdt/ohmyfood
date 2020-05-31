@@ -151,20 +151,101 @@ a {
   }
 }
 
-.btn {
+.btn-regular a::after {
+  position: absolute;
+  overflow: hidden;
   display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  color: #FDCB47;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  background-color: #569C87;
-  border: 1px solid #569C87;
-  padding: 0.5625rem 1.5rem;
-  line-height: auto;
+  vertical-align: bottom;
+  padding-left: 2px;
+  -webkit-animation: ellipsis steps(4, end) 1000ms infinite;
+  animation: ellipsis steps(4, end) 1000ms infinite;
+  content: "...";
+  width: 0px;
 }
 
+@keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+.card-prev:hover i, .card-prev:hover p, .card-prev:hover h2 {
+  transform: scale(1.3);
+  opacity: 0.8;
+}
+
+.card-prev i, .card-prev p, .card-prev h2 {
+  transform: scale(1);
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
+}
+
+.head .section-title {
+  cursor: default;
+  position: relative;
+  pointer-events: unset;
+}
+.head .section-title::after {
+  content: "";
+  transform-origin: left bottom;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.2em;
+  background: #000000;
+  opacity: 0.8;
+  transition: transform 0.3s;
+}
+.head .section-title:hover::after {
+  transform: scaleX(1);
+}
+
+.footer-link:hover {
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
 header {
   background: #569C87;
   height: 4.25rem;
@@ -254,6 +335,7 @@ footer a {
 .theme-1 .restaurant-name {
   background: #2c0308;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .theme-1 .subtitle {
@@ -284,6 +366,7 @@ h3 i {
 .theme-2 .restaurant-name {
   background: linear-gradient(90deg, #d78431 0%, #8f5bfa 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .theme-2 .subtitle {
@@ -336,6 +419,7 @@ h3 i {
 .theme-3 .restaurant-name {
   background: linear-gradient(90deg, #0131df 0%, #0d85f9 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .theme-3 .subtitle {
@@ -349,6 +433,7 @@ h3 i {
 .theme-4 .restaurant-name {
   background: linear-gradient(90deg, #44983d 0%, #bdfa7d 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .theme-4 .subtitle {
@@ -379,6 +464,7 @@ i {
   padding-bottom: 0.5rem;
   background: linear-gradient(90deg, #f05160 0%, #f6916a 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 960px) {
@@ -442,7 +528,7 @@ section {
   border: none;
   border-radius: 8px;
   background: #569C87;
-  padding: 8px 25px;
+  padding: 8px 30px;
 }
 .btn-regular a {
   text-align: center;
@@ -456,7 +542,7 @@ section {
 }
 @media (min-width: 960px) {
   .btn-regular {
-    padding: 12px 35px;
+    padding: 12px 40px;
     border-radius: 12px;
   }
 }
