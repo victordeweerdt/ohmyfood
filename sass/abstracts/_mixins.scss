@@ -96,13 +96,7 @@
 @mixin color($section-name, $color) {
   .#{$section-name} {
     color:$color;
-    > p {
-        color:$color;
-    }
-    img {
-      color:$color;
-    }
-    h3 {
+    * {
       color:$color;
     }
 }

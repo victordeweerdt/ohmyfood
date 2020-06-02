@@ -379,39 +379,21 @@ h3 i {
 .first-section {
   color: #C77413;
 }
-.first-section > p {
-  color: #C77413;
-}
-.first-section img {
-  color: #C77413;
-}
-.first-section h3 {
+.first-section * {
   color: #C77413;
 }
 
 .second-section {
   color: #A56799;
 }
-.second-section > p {
-  color: #A56799;
-}
-.second-section img {
-  color: #A56799;
-}
-.second-section h3 {
+.second-section * {
   color: #A56799;
 }
 
 .third-section {
   color: #6E4CCC;
 }
-.third-section > p {
-  color: #6E4CCC;
-}
-.third-section img {
-  color: #6E4CCC;
-}
-.third-section h3 {
+.third-section * {
   color: #6E4CCC;
 }
 
