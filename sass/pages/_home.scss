@@ -1,13 +1,14 @@
 // Home
 
 .card-prev {
-    height: 200px;
+    height: 400px;
     box-shadow: 0 0 5px 0 rgba(161, 161, 161, 0.5);
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom:10px;
     p {
         padding-bottom: 0.5rem;
         font-size:0.65rem;
@@ -18,10 +19,10 @@
         }
     }
     @media (min-width: $sm) {
-        height:250px;
+        height:400px;
     }
     @media (min-width: $med) {
-        height:400px;
+        height: 500px;
     }
     @media (min-width: $lg) {
         height:350px;
