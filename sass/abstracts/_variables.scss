@@ -48,18 +48,6 @@ $spacers: (
     5: ($spacer * 3)
 );
 
-// Size
-
-$sizes: () !default;
-
-$sizes: (
-    25: 25%,
-    50: 50%,
-    75: 75%,
-    100: 100%,
-    auto: auto
-);
-
 // Body
 
 $body-bg: $white !default;
@@ -71,14 +59,6 @@ $lg: 960px; // 1080 and hi-res laptops
 $med: 640px; // hi-res tablets and low-res laptops
 $sm: 448px; // mobile and low-res tablets
 $xs: 320px; // mobile only
-
-// Grid containers
-
-// Grid columns
-
-$grid-columns:                12 !default;
-$grid-gutter-width:           20px !default;
-$grid-row-columns:            6 !default;
 
 // Components
 //
