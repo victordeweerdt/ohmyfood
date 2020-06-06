@@ -562,6 +562,11 @@ section {
   }
 }
 
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
 .head {
   margin-top: 2rem;
   display: flex;
