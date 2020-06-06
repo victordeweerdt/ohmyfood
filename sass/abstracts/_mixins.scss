@@ -40,7 +40,8 @@
         .restaurant-name {
           background: $innertext;
           background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: transparent;
+          -webkit-background-clip: text;
         }
         .subtitle {
           color:$color-title;

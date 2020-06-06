@@ -332,7 +332,8 @@ footer a {
 .theme-1 .restaurant-name {
   background: #2c0308;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  -webkit-background-clip: text;
 }
 .theme-1 .subtitle {
   color: #2c0308;
@@ -362,7 +363,8 @@ h3 i {
 .theme-2 .restaurant-name {
   background: linear-gradient(90deg, #d78431 0%, #8f5bfa 100%);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  -webkit-background-clip: text;
 }
 .theme-2 .subtitle {
   color: #C77413;
@@ -396,7 +398,8 @@ h3 i {
 .theme-3 .restaurant-name {
   background: linear-gradient(90deg, #0131df 0%, #0d85f9 100%);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  -webkit-background-clip: text;
 }
 .theme-3 .subtitle {
   color: #0687FB;
@@ -409,7 +412,8 @@ h3 i {
 .theme-4 .restaurant-name {
   background: linear-gradient(90deg, #44983d 0%, #bdfa7d 100%);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  -webkit-background-clip: text;
 }
 .theme-4 .subtitle {
   color: #72BF55;
@@ -438,8 +442,8 @@ i {
   padding-bottom: 0.5rem;
   background: linear-gradient(90deg, #f05160 0%, #f6916a 100%);
   background-clip: text;
+  color: transparent;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 @media (min-width: 960px) {
   i {
