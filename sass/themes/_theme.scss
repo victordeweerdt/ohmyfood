@@ -17,10 +17,11 @@ a:link {
 i {
     font-size: 1.5rem;
     padding-bottom: 0.5rem;
-    background: linear-gradient(90deg, rgba(240,81,96,1) 0%, rgba(246,145,106,1) 100%);
-    background-clip: text;
     color: transparent;
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #f15861, #f6a183);
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     @media (min-width:$lg) {
         font-size:2.5rem;
         padding-bottom: 1rem;
@@ -36,35 +37,7 @@ main {
 }
 
 section {
-    width:85%;
-    margin:0 auto;
-    @media (min-width:$lg) {
-        width:80%;
-    }
-    @media (min-width:$xl) {
-        width:66.6%;
-    }
-}
-
-.cards {
-    @include flex(row, false, space-between);
-    width:85%;
-    margin:0 auto;
-    flex-wrap: wrap;
-    margin-bottom:3rem;
-    a {
-        width:100%;
-        margin:0 auto;
-        @media (min-width:$med){
-            width:49%;
-        }
-        @media (min-width:$lg){
-            width:24%;
-        }
-    }
-    @media (min-width:$xl) {
-        width:66.6%;
-    }
+    @include basic-container;
 }
 
 .btn-regular {
@@ -93,9 +66,8 @@ section {
 .menu {
     box-shadow: 0 0 5px 0 rgba(161, 161, 161, 0.5);
     padding:2rem 0 4rem 0;
-    width:85%;
-    margin:0 auto;
     @include flex(column, center);
+    @include basic-container;
     h2 {
         font-size:1.5rem;
     }
@@ -106,14 +78,10 @@ section {
             font-size:3rem;
         }
     }
-    @media (min-width:$xl) {
-        width:66.6%;
-    }
 }
 
 .container {
-    width:85%;
-    margin:0 auto;
+    @include basic-container;
 }
 
 .head {

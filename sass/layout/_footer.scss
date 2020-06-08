@@ -1,15 +1,12 @@
 footer {
     background:$primary-color;
     height:3rem;
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(row, center, space-between);
     position: relative;
     bottom:0;
     a {
         color: $secondary-color;
-        font-size: 1rem;
+        font-size: $spacer;
         padding:10px 20px;
         @media (max-width: $sm) {
             font-size:0.75rem;
