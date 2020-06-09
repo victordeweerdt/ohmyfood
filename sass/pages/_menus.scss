@@ -1,0 +1,36 @@
+// Menu 1
+
+@include themable(theme-1, $theme-1-bg-color, $theme-1-font, $theme-1-color, $theme-1-color);
+
+.theme-1 {
+    h2 {
+        text-transform: uppercase;
+    }
+    i+h2 {
+        text-transform: none;
+    }
+}
+
+h3 i {
+    padding-right:10px;
+    font-size:$spacer;
+    @media (min-width:$xl) {
+        font-size:$spacer*2;
+    }
+}
+
+// Menu 2
+
+@include themable(theme-2, $theme-2-bg-color, $theme-2-font, $theme-2-color, map-get($gradients, gradient-2));
+
+@include color(first-section, $theme-2-color);
+@include color(second-section, $theme-2-color-2);
+@include color(third-section, $theme-2-color-3);
+
+// Menu 3
+
+@include themable(theme-3, $theme-3-bg-color, $theme-3-font, $theme-3-color, map-get($gradients, gradient-3));
+
+// Menu 4
+
+@include themable(theme-4, $theme-4-bg-color, $theme-4-font, $theme-4-color, map-get($gradients, gradient-4));
